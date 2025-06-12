@@ -1,12 +1,24 @@
-# React + Vite
+My Personal Portfolio Website
+This is the repository for my personal portfolio website, built with modern web technologies to showcase my skills, projects, and professional journey. The site is designed to be clean, responsive, and engaging, featuring smooth animations and a functional contact form.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+✨ Features
+Modern & Responsive Design: Fully responsive layout that looks great on all devices, from mobile phones to desktop monitors.
 
-Currently, two official plugins are available:
+Engaging Animations: Subtle scroll-triggered fade-in animations for each section and an interactive typing effect on the hero banner.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Single-File Architecture: All components are consolidated into a single App.jsx file for simplicity.
 
-## Expanding the ESLint configuration
+Functional Contact Form: Visitors can send messages directly to my inbox using a secure form powered by EmailJS.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Dynamic Content: Easy-to-update sections for projects, skills, and professional experience.
+
+🚀 Tech Stack
+Frontend: React with Vite
+
+Styling: Tailwind CSS
+
+Animations: react-intersection-observer & react-type-animation
+
+Icons: Lucide React
+
+Contact Form: EmailJS
