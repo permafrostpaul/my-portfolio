@@ -2,53 +2,83 @@
 
 import React from 'react';
 import { useInView } from 'react-intersection-observer';
-import { ExternalLink } from 'lucide-react';
+import CountUp from 'react-countup';
+import { ExternalLink, Briefcase, Code, Award } from 'lucide-react';
+
+// A helper component for the animated stat cards
+const StatCard = ({ icon: Icon, end, label, inView, noSeparator }) => (
+    <div className="bg-white p-4 rounded-lg shadow-md flex items-center">
+        <div className="p-3 bg-blue-100 text-blue-600 rounded-full mr-4">
+            <Icon size={24} />
+        </div>
+        <div>
+            <p className="text-3xl font-bold text-slate-800">
+                {inView && <CountUp end={end} duration={3} separator={noSeparator ? '' : ','} />}
+                {label.includes('Projects') && '+'}
+                 {label.includes('Internships') && '+'}
+            </p>
+            <p className="text-slate-500 text-sm">{label}</p>
+        </div>
+    </div>
+);
+
 
 export default function About() {
     const { ref, inView } = useInView({
-        threshold: 0.1,    // Trigger when 10% of the section is visible
+        triggerOnce: true,
+        threshold: 0.2,
     });
 
     return (
         <section 
             id="about" 
             ref={ref}
-            className={`py-24 bg-white transition-all duration-700 ease-out ${inView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
+            className="py-24 bg-white"
         >
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="text-center mb-16">
-                    <h2 className="text-4xl md:text-5xl font-bold text-slate-900">About Me</h2>
-                    <p className="mt-4 text-lg text-slate-600">Passionate about creating digital solutions that make a difference</p>
-                </div>
-                <div className="grid md:grid-cols-5 gap-12 items-center">
-                    <div className="md:col-span-2 relative">
-                        <img src="https://placehold.co/400x500/E2E8F0/475569?text=John+Smith" alt="John Smith" className="rounded-2xl shadow-2xl w-full" />
-                        <span className="absolute bottom-4 right-4 flex items-center bg-white/80 backdrop-blur-sm rounded-full px-4 py-2 text-sm font-medium text-green-600">
-                            <span className="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
-                            Available for work
-                        </span>
+                <div className={`transition-all duration-700 ease-out ${inView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                    <div className="text-center mb-16">
+                        <h2 className="text-4xl md:text-5xl font-bold text-slate-900">About Me</h2>
+                        <p className="mt-4 text-lg text-slate-600">Passionate about creating digital solutions that make a difference</p>
                     </div>
-                    <div className="md:col-span-3">
-                        <h3 className="text-3xl font-semibold text-slate-800">Ready to launch my tech career</h3>
-                        <p className="mt-4 text-slate-600 text-lg">
-                            As a graduating Computer Engineering student, I have a strong foundation in software development and web technologies. Throughout my studies, I've built multiple projects using modern frameworks and best practices.
-                        </p>
-                        <p className="mt-4 text-slate-600 text-lg">
-                            I'm excited to bring my academic knowledge, personal projects, and fresh perspective to a dynamic team. Always curious about emerging technologies and committed to writing clean, efficient code.
-                        </p>
-                        <div className="mt-10 grid grid-cols-2 gap-8 text-center">
-                            <div>
-                                <p className="text-4xl font-bold text-blue-600">15+</p>
-                                <p className="mt-1 text-slate-500">Academic Projects</p>
-                            </div>
-                            <div>
-                                <p className="text-4xl font-bold text-blue-600">2025</p>
-                                <p className="mt-1 text-slate-500">Graduating Student</p>
-                            </div>
+                </div>
+                
+                <div className="grid lg:grid-cols-2 gap-12 xl:gap-16 items-center">
+                    {/* Image Section with decorative elements */}
+                    <div className={`relative transition-all duration-700 ease-out delay-200 ${inView ? 'opacity-100 scale-100' : 'opacity-0 scale-90'}`}>
+                        <div className="absolute -top-4 -left-4 w-full h-full bg-slate-100 rounded-2xl transform -rotate-3 z-0"></div>
+                        <img src="https://placehold.co/400x500/E2E8F0/475569?text=Paul+John" alt="Paul John Bullangay" className="relative rounded-2xl shadow-2xl w-full z-10" />
+                        <div className="absolute bottom-4 right-4 z-20">
+                            <span className="flex items-center bg-white/80 backdrop-blur-sm rounded-full px-4 py-2 text-sm font-medium text-green-600 shadow-md">
+                                <span className="w-2 h-2 bg-green-500 rounded-full mr-2 animate-pulse"></span>
+                                Available for work
+                            </span>
                         </div>
-                        <div className="mt-8">
-                            <a href="#" className="inline-flex items-center font-semibold text-blue-600 hover:text-blue-800 transition-colors">
-                                Download Resume <ExternalLink size={18} className="ml-2" />
+                    </div>
+
+                    {/* Text and Stats Section */}
+                    <div className={`space-y-8 transition-all duration-700 ease-out delay-300 ${inView ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-8'}`}>
+                        <div>
+                            <h3 className="text-3xl font-semibold text-slate-800">Bridging Hardware & Software</h3>
+                            <p className="mt-4 text-slate-600 text-lg">
+                                As a graduating Computer Engineering student, I thrive at the intersection of hardware and software. My passion lies in leveraging this unique perspective to build efficient, scalable web solutions that solve real-world problems.
+                            </p>
+                            <p className="mt-4 text-slate-600 text-lg">
+                                I'm excited to apply my hands-on experience from internships and academic projects—including IoT development and full-stack applications—to a dynamic team. I am committed to writing clean, maintainable code and am always eager to learn and adapt to emerging technologies.
+                            </p>
+                        </div>
+                        
+                        {/* Animated Stat Cards */}
+                        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                            <StatCard icon={Code} end={15} label="Academic Projects" inView={inView} />
+                            <StatCard icon={Briefcase} end={2} label="Internships" inView={inView} />
+                            <StatCard icon={Award} end={2025} label="Graduating Student" inView={inView} noSeparator={true} />
+                        </div>
+
+                        <div className="pt-4">
+                            <a href="#" className="inline-flex items-center justify-center px-8 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-lg hover:bg-blue-700 transition-all duration-300 transform hover:scale-105 group">
+                                Download Resume 
+                                <ExternalLink size={18} className="ml-2 transition-transform duration-300 group-hover:translate-x-1" />
                             </a>
                         </div>
                     </div>

@@ -4,31 +4,32 @@ import React from 'react';
 import { useInView } from 'react-intersection-observer';
 import { GraduationCap, Building, Star } from 'lucide-react';
 
+
 const journeyData = [
     { 
-        title: "Bachelor of Science in Computer Science", 
-        institution: "State University",
-        date: "2024",
-        description: "Graduated with honors, completed capstone project on web application development, and participated in programming competitions.",
-        icon: GraduationCap,
-        color: "blue"
-    },
-    { 
-        title: "Web Development Intern", 
-        institution: "Local Tech Startup",
-        date: "2023 - 2024",
-        description: "Assisted in building responsive web interfaces, learned agile development practices, and contributed to team projects.",
-        icon: Building,
-        color: "yellow"
-    },
-    { 
-        title: "Teaching Assistant", 
-        institution: "University CS Department",
-        date: "2022 - 2023",
-        description: "Helped students with programming assignments, conducted lab sessions for introductory programming courses.",
-        icon: Star,
-        color: "indigo"
-    },
+        title: "Web Developer Intern", 
+            institution: "Innovato Information Technology Solutions",
+            date: "Aug 2024 - Nov 2024",
+            description: "Developed a complete Daily Time Record (DTR) system using Laravel and Tailwind CSS, handling both frontend and backend operations.",
+            icon: Building,
+            color: "yellow"
+        },
+        { 
+            title: "Bachelor of Science in Computer Engineering", 
+            institution: "Polytechnic University of the Philippines - Manila",
+            date: "Aug 2021 - Present",
+            description: "Specializing in software development and hardware integration. Strengthened skills through various Arduino and ESP32-based projects, functional websites, and our 'Smart Misting System' capstone, where I developed the frontend, programmed the ESP32, and connected it to a FastAPI backend via the MQTT protocol.",
+            icon: GraduationCap,
+            color: "blue"
+        },
+        { 
+            title: "Frontend Developer Intern", 
+            institution: "LexMeet - Pasig City",
+            date: "Aug 2023 - Oct 2023",
+            description: "Contributed to the development and design of a new company website using ReactJS and Bootstrap, enhancing user experience and modernizing the interface.",
+            icon: Star,
+            color: "indigo"
+        },
 ]
 
 export default function Journey() {
