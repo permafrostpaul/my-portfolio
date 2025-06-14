@@ -94,7 +94,7 @@ export default function Contact() {
                                 </div>
                                 <div className="ml-4">
                                     <h4 className="text-slate-800 font-semibold">Email</h4>
-                                    <a href="mailto:john.smith@email.com" className="text-blue-600 hover:underline">mr.pauljohn12@gmail.com</a>
+                                    <a href="mailto:mr.pauljohn12@gmail.com" className="text-blue-600 hover:underline">mr.pauljohn12@gmail.com</a>
                                 </div>
                             </li>
                             <li className="flex items-start">

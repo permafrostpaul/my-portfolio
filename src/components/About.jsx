@@ -47,7 +47,7 @@ export default function About() {
                     {/* Image Section with decorative elements */}
                     <div className={`relative transition-all duration-700 ease-out delay-200 ${inView ? 'opacity-100 scale-100' : 'opacity-0 scale-90'}`}>
                         <div className="absolute -top-4 -left-4 w-full h-full bg-slate-100 rounded-2xl transform -rotate-3 z-0"></div>
-                        <img src="https://placehold.co/400x500/E2E8F0/475569?text=Paul+John" alt="Paul John Bullangay" className="relative rounded-2xl shadow-2xl w-full z-10" />
+                        <img src="src\assets\PaulPicture.JPG" alt="Paul John Bullangay" className="relative rounded-2xl shadow-2xl w-full z-10" />
                         <div className="absolute bottom-4 right-4 z-20">
                             <span className="flex items-center bg-white/80 backdrop-blur-sm rounded-full px-4 py-2 text-sm font-medium text-green-600 shadow-md">
                                 <span className="w-2 h-2 bg-green-500 rounded-full mr-2 animate-pulse"></span>
