@@ -14,13 +14,13 @@ const projectsData = [
         image: "https://placehold.co/600x400/16a34a/FFFFFF?text=Misting+System",
         githubUrl: "https://github.com/permafrostpaul/smart-misting-system"
     },
-    { 
-        title: "Daily Time Record (DTR) System", 
-        description: "Developed a complete DTR system during my internship, handling both frontend and backend using Laravel to create an efficient time tracking solution for employees.", 
-        tags: ["Laravel", "PHP", "Tailwind CSS", "MySQL"], 
-        type: "Internship Project", 
-        image: "https://placehold.co/600x400/94a3b8/FFFFFF?text=DTR+System",
-        githubUrl: "https://github.com/permafrostpaul/dtr-system"
+    {   title: "Weather PH", 
+        description: "Contributed to the redesign of a company website, enhancing the user experience and modernizing the interface using ReactJS and Bootstrap.", 
+        tags: ["React", "API","Tailwind CSS", "Vite"], 
+        type: "Personal Project ", 
+        image: "https://placehold.co/600x400/3498db/FFFFFF?text=Weather+App",
+        githubUrl: "https://github.com/permafrostpaul/weather-app-ph",
+        liveDemoUrl: "https://weather-app-ph.netlify.app/"
     },
     { 
         title: "RFID Logic Game", 
@@ -47,12 +47,12 @@ const projectsData = [
         githubUrl: "https://github.com/permafrostpaul/cwd-final-project"
     },
     { 
-        title: "Company Website Redesign", 
-        description: "Contributed to the redesign of a company website, enhancing the user experience and modernizing the interface using ReactJS and Bootstrap.", 
-        tags: ["React", "Bootstrap", "JavaScript"], 
+        title: "Daily Time Record (DTR) System", 
+        description: "Developed a complete DTR system during my internship, handling both frontend and backend using Laravel to create an efficient time tracking solution for employees.", 
+        tags: ["Laravel", "PHP", "Tailwind CSS", "MySQL"], 
         type: "Internship Project", 
-        image: "https://placehold.co/600x400/38bdf8/FFFFFF?text=Homepage",
-        githubUrl: "#" // Use '#' if the repo is private
+        image: "https://placehold.co/600x400/94a3b8/FFFFFF?text=DTR+System",
+        githubUrl: "https://github.com/permafrostpaul/dtr-system"
     },
 ];
 
