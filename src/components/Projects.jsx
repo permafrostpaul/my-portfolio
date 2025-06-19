@@ -11,11 +11,11 @@ const projectsData = [
         description: "As the primary coder for our capstone, I developed the frontend, programmed the ESP32, and integrated it with a FastAPI backend via MQTT for a complete IoT solution.", 
         tags: ["ESP32", "C++", "FastAPI", "MQTT", "IoT"], 
         type: "Capstone Project", 
-        image: "https://placehold.co/600x400/16a34a/FFFFFF?text=Misting+System",
+        image: "https://placehold.co/600x400/16a34a/FFFFFF?text=Smart+Misting+System",
         githubUrl: "https://github.com/permafrostpaul/smart-misting-system"
     },
     {   title: "Weather PH", 
-        description: "Contributed to the redesign of a company website, enhancing the user experience and modernizing the interface using ReactJS and Bootstrap.", 
+        description: "A sleek, responsive weather application for cities in the Philippines, built with React and Tailwind CSS. It fetches and displays live data from the OpenWeatherMap API, featuring a modern, user-friendly interface.", 
         tags: ["React", "API","Tailwind CSS", "Vite"], 
         type: "Personal Project ", 
         image: "https://placehold.co/600x400/3498db/FFFFFF?text=Weather+App",
@@ -39,12 +39,13 @@ const projectsData = [
         githubUrl: "https://github.com/permafrostpaul/my-portfolio"
     },
     { 
-        title: "Web Development Final Project", 
-        description: "A comprehensive final project for my CWD course, demonstrating key web development principles and integrating multiple frontend and backend technologies.", 
-        tags: ["React", "Node.js", "Express", "Database"], 
-        type: "Academic Project", 
-        image: "https://placehold.co/600x400/8b5cf6/FFFFFF?text=CWD+Project",
-        githubUrl: "https://github.com/permafrostpaul/cwd-final-project"
+        title: "TaskFlow", 
+        description: "A modern, full-featured task management application with an integrated calendar view. Built with React and Tailwind CSS, it includes advanced features like filtering, priority levels, and persistent state using localStorage.", 
+        tags: ["React", "Vite", "Tailwind CSS", "date-fns"], 
+        type: "Personal Project", 
+        image: "https://placehold.co/600x400/8b5cf6/FFFFFF?text=TaskFlow",
+        githubUrl: "https://github.com/permafrostpaul/taskflow-app",
+        liveDemoUrl: "https://taskflow-ph.netlify.app/"
     },
     { 
         title: "Daily Time Record (DTR) System", 
