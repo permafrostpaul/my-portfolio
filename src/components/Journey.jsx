@@ -7,7 +7,7 @@ import { GraduationCap, Building, Star } from 'lucide-react';
 
 const journeyData = [
     { 
-        title: "Web Developer Intern", 
+        title: "Information Technology Intern", 
             institution: "Innovato Information Technology Solutions",
             date: "Aug 2024 - Nov 2024",
             description: "Developed a complete Daily Time Record (DTR) system using Laravel and Tailwind CSS, handling both frontend and backend operations.",

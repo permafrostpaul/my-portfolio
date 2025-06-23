@@ -11,23 +11,23 @@ const projectsData = [
         description: "As the primary coder for our capstone, I developed the frontend, programmed the ESP32, and integrated it with a FastAPI backend via MQTT for a complete IoT solution.", 
         tags: ["ESP32", "C++", "FastAPI", "MQTT", "IoT"], 
         type: "Capstone Project", 
-        image: "https://placehold.co/600x400/16a34a/FFFFFF?text=Smart+Misting+System",
+        image: "smart_misting_system.png",
         githubUrl: "https://github.com/permafrostpaul/smart-misting-system"
     },
     {   title: "Weather PH", 
         description: "A sleek, responsive weather application for cities in the Philippines, built with React and Tailwind CSS. It fetches and displays live data from the OpenWeatherMap API, featuring a modern, user-friendly interface.", 
         tags: ["React", "API","Tailwind CSS", "Vite"], 
         type: "Personal Project ", 
-        image: "https://placehold.co/600x400/3498db/FFFFFF?text=Weather+App",
+        image: "weather_app.png",
         githubUrl: "https://github.com/permafrostpaul/weather-app-ph",
         liveDemoUrl: "https://weather-app-ph.netlify.app/"
     },
     { 
-        title: "RFID Logic Game", 
+        title: "PROJECT: RAISE", 
         description: "An interactive academic project where players solve puzzles by placing RFID cards on a reader, demonstrating hardware-software integration.", 
         tags: ["Arduino", "C++", "RFID", "Hardware"], 
         type: "Academic Project", 
-        image: "https://placehold.co/600x400/f59e0b/FFFFFF?text=RFID+Game",
+        image: "rfid_game.png",
         githubUrl: "https://github.com/permafrostpaul/rfid-game"
     },
     { 
@@ -35,7 +35,7 @@ const projectsData = [
         description: "This very website, designed and built from scratch to showcase my skills. Features a modern design, animations, and a functional contact form.", 
         tags: ["React", "Vite", "Tailwind CSS"], 
         type: "Personal Project", 
-        image: "https://placehold.co/600x400/3b82f6/FFFFFF?text=This+Portfolio",
+        image: "portfolio.png",
         githubUrl: "https://github.com/permafrostpaul/my-portfolio"
     },
     { 
@@ -43,7 +43,7 @@ const projectsData = [
         description: "A modern, full-featured task management application with an integrated calendar view. Built with React and Tailwind CSS, it includes advanced features like filtering, priority levels, and persistent state using localStorage.", 
         tags: ["React", "Vite", "Tailwind CSS", "date-fns"], 
         type: "Personal Project", 
-        image: "https://placehold.co/600x400/8b5cf6/FFFFFF?text=TaskFlow",
+        image: "taskflow.png",
         githubUrl: "https://github.com/permafrostpaul/taskflow-app",
         liveDemoUrl: "https://taskflow-ph.netlify.app/"
     },
@@ -52,7 +52,7 @@ const projectsData = [
         description: "Developed a complete DTR system during my internship, handling both frontend and backend using Laravel to create an efficient time tracking solution for employees.", 
         tags: ["Laravel", "PHP", "Tailwind CSS", "MySQL"], 
         type: "Internship Project", 
-        image: "https://placehold.co/600x400/94a3b8/FFFFFF?text=DTR+System",
+        image: "dtr_system.png",
         githubUrl: "https://github.com/permafrostpaul/dtr-system"
     },
 ];
