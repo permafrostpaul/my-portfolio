@@ -8,7 +8,7 @@ const skillsData = [
     { category: "Frontend", icon: Code, skills: ["HTML/CSS", "JavaScript", "React.js", "Tailwind CSS", "Bootstrap"], color: "blue" },
     { category: "Backend", icon: Briefcase, skills: ["Node.js", "Express.js", "Laravel", "Java", "REST APIs"], color: "green" },
     { category: "Database", icon: Database, skills: ["MySQL", "MongoDB", "SQLite", "Database Design", "SQL"], color: "purple" },
-    { category: "Tools & Others", icon: Wrench, skills: ["Git/GitHub", "VS Code", "Postman", "Linux", "Problem Solving"], color: "orange" },
+    { category: "Tools & Others", icon: Wrench, skills: ["Git/GitHub", "VS Code", "Agile/Scrum", "Team Collaboration", "Problem Solving"], color: "orange" },
 ];
 
 const colorMap = {

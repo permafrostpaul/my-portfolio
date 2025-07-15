@@ -59,12 +59,12 @@ export default function About() {
                     {/* Text and Stats Section */}
                     <div className={`space-y-8 transition-all duration-700 ease-out delay-300 ${inView ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-8'}`}>
                         <div>
-                            <h3 className="text-3xl font-semibold text-slate-800">Bridging Hardware & Software</h3>
+                            <h3 className="text-3xl font-semibold text-slate-800">Crafting Digital Solutions</h3>
                             <p className="mt-4 text-slate-600 text-lg">
-                                As a graduating Computer Engineering student, I thrive at the intersection of hardware and software. My passion lies in leveraging this unique perspective to build efficient, scalable web solutions that solve real-world problems.
+                                As a graduating Computer Engineering student, I've discovered my passion lies in the world of software development. I enjoy using my analytical foundation to build efficient, scalable web solutions that solve real-world problems.
                             </p>
                             <p className="mt-4 text-slate-600 text-lg">
-                                I'm excited to apply my hands-on experience from internships and academic projects—including IoT development and full-stack applications—to a dynamic team. I am committed to writing clean, maintainable code and am always eager to learn and adapt to emerging technologies.
+                               My hands-on experience building full-stack applications during internships and academic projects has solidified my commitment to writing clean, maintainable code. I am eager to contribute to a dynamic team and am always excited to learn and master emerging technologies.
                             </p>
                         </div>
                         

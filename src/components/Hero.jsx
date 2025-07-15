@@ -33,6 +33,8 @@ export default function Hero() {
                             2000,
                             'Web Developer',
                             2000,
+                            'Frontend Developer',
+                            2000,
                             'Full Stack Developer',
                             2000,
                         ]}
@@ -51,12 +53,6 @@ export default function Hero() {
                     <a href="#contact" className="inline-flex items-center justify-center px-8 py-3 bg-white text-slate-700 font-semibold rounded-lg shadow-lg hover:bg-slate-100 transition-all duration-300 transform hover:scale-105 border border-slate-200">
                         <Mail size={18} className="mr-2" /> Get In Touch
                     </a>
-                </div>
-                <div className="mt-12 flex justify-center items-center space-x-6">
-                    <a href="https://github.com/permafrostpaul" target="_blank" rel="noopener noreferrer" className="text-slate-500 hover:text-blue-600 transition-colors"><Github size={24} /></a>
-                    <a href="https://www.linkedin.com/in/permafrostpaul12/" target="_blank" rel="noopener noreferrer" className="text-slate-500 hover:text-blue-600 transition-colors"><Linkedin size={24} /></a>
-                    <a href="https://www.facebook.com/permafrostpaul/" target="_blank" rel="noopener noreferrer" className="text-slate-500 hover:text-blue-600 transition-colors"><Facebook size={24} /></a>
-                    <a href="https://www.instagram.com/permafrostpaul/" target="_blank" rel="noopener noreferrer" className="text-slate-500 hover:text-blue-600 transition-colors"><Instagram size={24} /></a>
                 </div>
             </div>
         </section>
